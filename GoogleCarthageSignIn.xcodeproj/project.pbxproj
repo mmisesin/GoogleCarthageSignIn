@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		35532F381F4C28BE00034D67 /* GoogleCarthageSignIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 35532F361F4C28BE00034D67 /* GoogleCarthageSignIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35532F441F4C293200034D67 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35532F3F1F4C293200034D67 /* GoogleSignInDependencies.framework */; };
+		35532F451F4C293200034D67 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35532F401F4C293200034D67 /* GoogleSignIn.framework */; };
+		35532F461F4C293200034D67 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35532F411F4C293200034D67 /* GoogleSymbolUtilities.framework */; };
+		35532F471F4C293200034D67 /* GoogleSignIn.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 35532F421F4C293200034D67 /* GoogleSignIn.bundle */; };
+		35532F481F4C293200034D67 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35532F431F4C293200034D67 /* GoogleAppUtilities.framework */; };
+		35532F4A1F4C295B00034D67 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35532F491F4C295B00034D67 /* SafariServices.framework */; };
+		35532F4C1F4C296200034D67 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35532F4B1F4C296200034D67 /* SystemConfiguration.framework */; };
+		35532F4E1F4C2B0000034D67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35532F4D1F4C2AED00034D67 /* GoogleService-Info.plist */; };
+		35532F4F1F4C2B0400034D67 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35532F371F4C28BE00034D67 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35532F331F4C28BE00034D67 /* GoogleCarthageSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleCarthageSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35532F361F4C28BE00034D67 /* GoogleCarthageSignIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleCarthageSignIn.h; sourceTree = "<group>"; };
 		35532F371F4C28BE00034D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35532F3F1F4C293200034D67 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = GoogleSignIn/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		35532F401F4C293200034D67 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = GoogleSignIn/GoogleSignIn.framework; sourceTree = "<group>"; };
+		35532F411F4C293200034D67 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = GoogleSignIn/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		35532F421F4C293200034D67 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = GoogleSignIn/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		35532F431F4C293200034D67 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = GoogleSignIn/GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		35532F491F4C295B00034D67 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		35532F4B1F4C296200034D67 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		35532F4D1F4C2AED00034D67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +38,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35532F4C1F4C296200034D67 /* SystemConfiguration.framework in Frameworks */,
+				35532F4A1F4C295B00034D67 /* SafariServices.framework in Frameworks */,
+				35532F441F4C293200034D67 /* GoogleSignInDependencies.framework in Frameworks */,
+				35532F451F4C293200034D67 /* GoogleSignIn.framework in Frameworks */,
+				35532F461F4C293200034D67 /* GoogleSymbolUtilities.framework in Frameworks */,
+				35532F471F4C293200034D67 /* GoogleSignIn.bundle in Frameworks */,
+				35532F481F4C293200034D67 /* GoogleAppUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +56,7 @@
 			children = (
 				35532F351F4C28BE00034D67 /* GoogleCarthageSignIn */,
 				35532F341F4C28BE00034D67 /* Products */,
+				35532F3E1F4C293200034D67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +73,23 @@
 			children = (
 				35532F361F4C28BE00034D67 /* GoogleCarthageSignIn.h */,
 				35532F371F4C28BE00034D67 /* Info.plist */,
+				35532F4D1F4C2AED00034D67 /* GoogleService-Info.plist */,
 			);
 			path = GoogleCarthageSignIn;
+			sourceTree = "<group>";
+		};
+		35532F3E1F4C293200034D67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35532F4B1F4C296200034D67 /* SystemConfiguration.framework */,
+				35532F491F4C295B00034D67 /* SafariServices.framework */,
+				35532F431F4C293200034D67 /* GoogleAppUtilities.framework */,
+				35532F421F4C293200034D67 /* GoogleSignIn.bundle */,
+				35532F401F4C293200034D67 /* GoogleSignIn.framework */,
+				35532F3F1F4C293200034D67 /* GoogleSignInDependencies.framework */,
+				35532F411F4C293200034D67 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35532F4F1F4C2B0400034D67 /* Info.plist in Resources */,
+				35532F4E1F4C2B0000034D67 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +300,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleSignIn",
+				);
 				INFOPLIST_FILE = GoogleCarthageSignIn/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = misesin.GoogleCarthageSignIn;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -278,9 +328,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleSignIn",
+				);
 				INFOPLIST_FILE = GoogleCarthageSignIn/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = misesin.GoogleCarthageSignIn;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
